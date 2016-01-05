@@ -1,5 +1,5 @@
 # Site settings
-title: VS CloudCannon Demo Site
+title: Front Range Trails
 email: team@variantstudios.com
 description:
 baseurl: "/" # the subpath of your site, e.g. /blog/
@@ -54,7 +54,7 @@ disqus_short_name:
 disqus_show_comment_count:
 
 # typekit
-typekit: elx2qol
+typekit: umt7axv
 
 # Social Media
 facebook: "https://www.facebook.com/variantstudios"
