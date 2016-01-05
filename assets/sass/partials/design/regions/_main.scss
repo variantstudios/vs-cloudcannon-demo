@@ -1,0 +1,51 @@
+.content-wrapper {
+    @include clearfix;
+    background-color: $main-bg;
+    padding: 1em 1em;
+    margin-top: 11em;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    @include breakpoint($tablet, $no-query: ".no-mq") {
+        @include border-radius(3px);
+        padding: 2em 2em;
+        margin-top: 20em;
+        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.95);
+    }
+}
+.scroll-override {
+    @include breakpoint($tablet, $no-query: ".no-mq") {
+        margin-top: 38em !important;
+    }
+}
+
+.not-front main {
+    @include breakpoint($tablet, $no-query: ".no-mq") {
+        @include grid-span(8, 1);
+        &.two-sidebars {
+            margin-right: 0 !important;
+        }
+    }
+    header {
+        border-bottom: 1px solid $color-four;
+        margin-bottom: 1.5em;
+        padding-bottom: 1.5em;
+    }
+}
+
+main header {
+    h1 {
+        margin-bottom: 0.1em;
+        margin-top: 0;
+    }
+    .subtitle {
+        margin-top: .2em;
+        margin-bottom: 0;
+    }
+}
+.wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.site-container {}
+.content-wrap { @include clearfix; }

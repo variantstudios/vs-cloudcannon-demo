@@ -1,0 +1,13 @@
+<h3>Latest News</h3>
+<a href="/news/" class="view-more">View all news</a>
+{% for item in site.posts limit:2 %}
+  <div itemscope class="clearfix latest-news">
+    {% if page.layout == 'front' and item.image_path %}
+      <a href="{{ item.url }}"><img class="post-img" src="{{ item.image_path }}" itemprop="image" alt="{{ item.title }}"></a>
+    {% endif %}
+    <div class="post-detail">
+      <span itemprop="startDate" class="post-date">{{ item.date | date: '%B %d, %Y' }}</span>
+      <h5 itemprop="name"><a href="{{ item.url }}">{{ item.title }}</a></h5>
+    </div>
+  </div>
+{% endfor %}

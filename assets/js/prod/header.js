@@ -1,0 +1,1 @@
+$(window).scroll(function(){var e=$(window).scrollTop();e>100?($(".nav-header").addClass("nav-header-low"),$(".content-wrapper").addClass("scroll-override")):($(".nav-header").removeClass("nav-header-low"),$(".content-wrapper").removeClass("scroll-override"))});

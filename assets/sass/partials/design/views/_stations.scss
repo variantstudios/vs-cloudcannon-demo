@@ -1,0 +1,8 @@
+.stations {
+  iframe {
+    margin-bottom: 1em;
+    width: 100%;
+    height: 450px;
+    @include breakpoint($tablet, $no-query: '.no-mq') { width: 600px; }
+  }
+}

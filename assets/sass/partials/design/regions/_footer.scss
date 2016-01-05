@@ -1,0 +1,36 @@
+footer {
+  color: #fff;
+  font-size: 80%;
+  padding: 0 1em 2em;
+  margin-top: 3em !important;
+  @include clearfix;
+  a:link, a:visited, span {
+    color: #fff;
+  }
+  .left {
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+      float: left;
+    }
+  }
+  .right {
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+      float: right;
+    }
+  }
+}
+.footer-wrapper { 
+  @include clearfix;
+  .left {
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+      @include grid-span(6, 1);
+       //background-color: blue;
+    }
+  }
+  .right {
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+      @include grid-span(6, 7);
+        //background-color: green;
+        text-align: right;
+    }
+  }
+}

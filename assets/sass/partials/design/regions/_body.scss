@@ -1,0 +1,13 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+	box-sizing: border-box;
+	body {
+	  @include grad(#000, #1C242B);
+	  height: 100%;
+	}
+}
+html.lte-ie8 body {
+	background-color: black;
+	background-image: none;
+}
+*, *:before, *:after { box-sizing: inherit; }

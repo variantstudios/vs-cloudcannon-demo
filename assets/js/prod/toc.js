@@ -1,0 +1,1 @@
+$("h2").each(function(){$(".toc").append("<li><a href='#"+$("h2").attr("id")+"'>"+$("h2").text()+"</a></li>")});

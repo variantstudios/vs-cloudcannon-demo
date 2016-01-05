@@ -1,0 +1,61 @@
+.toc-back {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e5e5e5+0,ffffff+100 */
+    background: #e5e5e5;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #e5e5e5 0%, white 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e5e5e5), color-stop(100%, white));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #e5e5e5 0%, white 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #e5e5e5 0%, white 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #e5e5e5 0%, white 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #e5e5e5 0%, white 100%);
+    /* W3C */
+    padding: 1em 1em 0;
+    @include border-radius(5px);
+    border: 1px solid #ccc;
+    h2 {
+        margin: 0;
+        font-size: 110%;
+        padding-bottom: .5em;
+        font-weight: 700;
+    }
+    // .toc {
+    //     list-style: none;
+    //     padding-left: 0;
+    //     margin: 0;
+    //     li {
+    //         padding: .5em 0;
+    //         border-top: 1px solid darken($color-four, 5%);
+    //         a {
+    //             text-decoration: none;
+    //             display: block;
+    //             padding: 0 .5em;
+    //         }
+    //     }
+    // }
+    // .collapse {
+    //     width: 30px;
+    //     height: 30px;
+    //     float: right;
+    //     .vert, .horiz {
+    //         background-color: #303030;
+    //         @include border-radius(3px);
+    //         width: 20px;
+    //         height: 3px;
+    //         transition: .3s;
+    //         vertical-align: center;
+    //     }
+    //     .vert {
+    //       @include transform(rotateZ(90deg));
+    //       margin-top: 9px;
+    //     }
+    //     .horiz { margin-top: -3px; }
+    //     &:hover {
+    //       .vert { @include transform(rotateY(0deg)); }
+    //     }
+    // }
+}
