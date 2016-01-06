@@ -1,9 +1,0 @@
-<h2>Our Stations:</h2>
-{% for item in site.data.stations %}
-  <div itemscope class="clearfix stations">
-    <p itemprop="name"><b>{{ item.title }}:</b></p>
-    <p itemprop="location">{{ item.address }}</p>
-    <p itemprop="location">{{ item.city }}, {{ item.state }} {{ item.zip }}</p>
-    <iframe itemprop="map" src="{{ item.map }}" frameborder="0" style="border:0" allowfullscreen></iframe>
-  </div>
-{% endfor %}
