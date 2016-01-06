@@ -1,6 +1,8 @@
 ---
 layout: gallery
 title: First Gallery
+tag: 
+location: Fort Collins, CO
 permalink: /gallery/first-gallery/
 images:
   - title: Test Photo
@@ -17,4 +19,6 @@ images:
     large_image_path: /assets/images/gallery/full/photo-1441155472722-d17942a2b76a.jpg
 ---
 
-Welcome to our photo gallery. Mauris quam tellus, semper non consequat ut, bibendum in magna. Suspendisse id euismod nunc. Suspendisse mollis quam mollis, efficitur risus et, sollicitudin leo. Mauris ut libero est. Etiam a tellus eleifend, fringilla ligula lacinia, fermentum elite.
+Description. Mauris quam tellus, semper non consequat ut, bibendum in magna. Suspendisse id euismod nunc. Suspendisse mollis quam mollis, efficitur risus et, sollicitudin leo. Mauris ut libero est. Etiam a tellus eleifend, fringilla ligula lacinia, fermentum elite.
+
+Possible user upload system here
