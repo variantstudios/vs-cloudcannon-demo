@@ -4,9 +4,16 @@ title: Trail Demo
 permalink: /gallery/first-gallery/
 location: Fort Collins, CO
 rating: 4
-difficulty: 4
+difficulty:
+	- Easy
+	- Medium
+	- Hard
 distance: 3.1 miles
-amenities: Dog Friendly, Water Available, Bathrooms, Mountain Biking, etc.
+favorite: true
+dog-friendly: true
+water: true
+bathrooms: true
+mountain-biking: true
 images:
   - title: Test Photo
     image_path: /assets/images/gallery/thumb/photo-1440635592348-167b1b30296f_sm.jpg
