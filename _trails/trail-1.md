@@ -5,9 +5,9 @@ permalink: /gallery/first-gallery/
 location: Fort Collins, CO
 rating: 4
 difficulty:
-	- Easy
-	- Medium
-	- Hard
+  - Easy
+  - Medium
+  - Hard
 distance: 3.1 miles
 favorite: true
 dog-friendly: true
