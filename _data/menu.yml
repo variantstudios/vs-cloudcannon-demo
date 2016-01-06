@@ -1,12 +1,8 @@
-- text: About Us
-  url: /about-us/
-- text: Resources
-  url: /resources/
-- text: News
-  url: /news/
-- text: Events
-  url: /events/
+- text: Trails
+  url: /trails/
 - text: Gallery
   url: /gallery/
+- text: Blog
+  url: /blog/
 - text: Contact
   url: /contact/
