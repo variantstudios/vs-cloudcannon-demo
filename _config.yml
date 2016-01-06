@@ -35,6 +35,9 @@ collections:
   gallery:
     output: true
     permalink: /gallery/:title/
+  trails:
+    output: true
+    permalink: /trails/:title/
 defaults:
   - scope:
       type: "events"
