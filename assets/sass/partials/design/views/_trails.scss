@@ -1,0 +1,115 @@
+.view-trails.view-display-id-page {
+  .views-row {
+    padding: 1em 0;
+  }
+  .attachment {
+    @include clearfix;
+    margin-bottom: 2em;
+    .view-content {
+      width: 100%;
+      float: none;
+    }
+  }
+  .view-content{
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+      @include grid-span(7.5,1);
+    }
+  }
+  .view-filters {
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+      @include grid-span(4,9);
+    }
+  }
+
+  // Filters
+  .views-exposed-form {
+    label {
+      font-family: $heading-font-family;
+      font-weight: 400;
+      font-size: 1.1em;
+    }
+    .form-checkboxes {
+      .form-item {
+        display: inline-block;
+        padding-right: .5em;
+        label {
+          font-weight: 700;
+          font-family: $font-family;
+          font-size: .9em;
+        }
+      } 
+    }
+    .views-widget .description {
+      display: none;
+    }
+    .views-exposed-widget {
+      padding: 1em 0;
+      width: 100%;
+      border-bottom: 1px solid #979797;
+    }
+  }
+  #edit-field-star-rating-rating-wrapper {
+    .form-item {
+      padding: 0;
+      &.highlight {
+        input[type="checkbox"] {
+          background: url('../images/icons/star-small.svg') no-repeat ;
+        }
+      }
+    }
+    input[type="checkbox"] {
+      background: url('../images/icons/star-small-off-form.svg') no-repeat ;
+      -webkit-appearance: none;
+      height: 20px;
+      width: 20px;
+    }
+    label.option {
+      display: none;
+    }
+  }
+
+}
+
+.node-trails.node-teaser {
+  .section-one {
+    h2, .field-name-field-region, .field-name-field-star-rating {
+      @include breakpoint($tablet, $no-query: '.no-mq') {
+        display: inline-block;
+        padding-right: 1em;
+        vertical-align: middle;
+      }
+      .field-label, .field-items {
+        display: inline-block;
+      }
+    }
+  }
+  .section-two {
+    p {
+      margin-bottom: 0;
+    }
+  }
+  
+  .field-name-field-star-rating .fivestar-basic, .fivestar-default {
+    .field-item  {
+      margin: 0;
+    }
+    .star {
+      float: left;
+      width: 20px;
+      height: 20px;
+      margin-top: 0px;
+      background: url('../images/icons/star-small.svg') no-repeat ;
+      margin-right: 5px;
+      .on {
+        background: url('../images/icons/star-small.svg') no-repeat ;
+      }
+      .off {
+        background: url('../images/icons/star-small-off.svg') no-repeat ;
+      }
+    }
+  }
+
+}
+
+
+

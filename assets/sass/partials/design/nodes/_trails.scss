@@ -1,0 +1,132 @@
+// Icons
+.field-name-field-difficulty, .field-name-field-region, .field-name-field-distance-miles {
+  @include breakpoint($tablet, $no-query: '.no-mq') {
+    display: inline-block;
+    padding-right: 2em;
+  }
+  .field-label, .field-items {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .field-items {
+    font-size: 18px;
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+  .field-label {
+    @include hide-text;
+    background: url('../images/icons/location.svg');
+    width: 14px;
+    height: 20px;
+    display: inline-block;
+    margin-right: .75em;
+  }
+}
+
+.field-name-field-difficulty {
+  margin-bottom: 1.5em;
+  .field-label {
+    background: url('../images/icons/difficult.svg');
+    width: 26px;
+    height: 14px;
+  }
+}
+
+.field-name-field-distance-miles {
+  .field-label {
+    background: url('../images/icons/distance.svg');
+    width: 13px;
+    height: 23px;
+  }
+}
+
+.node-trails.view-mode-full {
+  .section-one {
+    margin-bottom: 2em;
+  }
+  .section-two {
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+      @include grid-span(7,1);
+    }
+    h1 {
+      @include breakpoint($desktop, $no-query: '.no-mq') {
+        display: inline-block;
+        vertical-align: middle;
+        padding-right: 25px;
+      }
+    }
+    .starrating {
+      @include clearfix;
+    }
+    .field-name-field-star-rating {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  .section-three {
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+      @include grid-span(5,8);
+    }
+  }
+
+  .field-name-field-images {
+    @include clearfix;
+    .field-item {
+      @include box-shadow(0,2px,4px,rgba(0,0,0,0.5));
+      line-height: 0;
+      float: left;
+      margin-top: 1em;
+      margin-right: 1em;
+    }
+    .field-item:first-child {
+      margin: 0 !important;
+    }
+
+  }
+  .field-name-body {
+    padding: 1em 0;
+  }
+  .field-name-field-elevation-gain {
+    padding-top: 2em;
+  }
+
+
+  .elevation {
+    font-family: $heading-font-family;
+    font-size: 18px;
+    padding-bottom: .2em;
+    .label-above, span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .label-above {
+      font-weight: 700;
+    }
+  }
+  .amenities {
+    padding: 1em 0;
+  }
+  .fivestar-basic, .fivestar-default {
+    .star {
+      float: left;
+      width: 30px;
+      height: 30px;
+      margin-top: 0px;
+      background: url('../images/icons/star.svg') no-repeat ;
+      margin-right: 5px;
+      .on {
+        background: url('../images/icons/star.svg') no-repeat ;
+      }
+      .off {
+        background: url('../images/icons/star-off.svg') no-repeat ;
+      }
+    }
+  }
+
+}
+
+
+
+

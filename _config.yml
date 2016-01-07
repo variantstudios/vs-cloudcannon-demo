@@ -38,6 +38,10 @@ collections:
   trails:
     output: true
     permalink: /trails/:title/
+    difficulty:
+      - Easy
+      - Medium
+      - Difficult
 defaults:
   - scope:
       type: "events"

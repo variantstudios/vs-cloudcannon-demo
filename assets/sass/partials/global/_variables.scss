@@ -6,24 +6,22 @@ $rem: 16px;
 
 // Colors
 // Sites Main Colors
-$color-one: #212121; // Drk Gray
-$color-two: #CF2A2B; // Red
+$color-one: #489B6E; // Green
+$color-two: #D79111; // Orange
 $color-three: #A1A1A1; // Grey
-$color-four: #E2E2E2; // Grey
 
 // Regions - Use Site Main Colors variables for these if they fit
-$nav-bg: #fff;
-$site-bg: #060606;
+$nav-bg: $color-three;
+$site-bg: #EFEFEF;
 $main-bg: #fff;
-$footer-bg: #CCC;
+$footer-bg: #333;
 
 // Typography
-$body-copy-color: #424242;
-$heading-color  : #1C242B;
+$body-copy-color: #4A4A4A;
+$heading-color: #4A4A4A;
 $link           : $color-one;
 $visited        : $color-one;
-$hover          : lighten($link, 5%);
-$full-page-link : #CF2A2B;
+$hover          : lighten($link, 20%);
 
 /* validation Colors */
 $error: #E84141; // Red

@@ -30,6 +30,7 @@
   background-image: -webkit-linear-gradient(top, $from 0%, $to $stop);
   background: -ms-linear-gradient(top, $from 0%, $to $stop);
   background: linear-gradient(to bottom, $from 0%, $to $stop);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to',GradientType=1 );
 }
 
 
@@ -47,24 +48,3 @@
   }
 }
 
-@mixin background-size($size) {
-    -webkit-background-size: $size;
-    -moz-background-size: $size;
-    -o-background-size: $size;
-    background-size: $size;
-}
-
-@mixin transition($args...) {
-  -webkit-transition: $args;
-  -moz-transition: $args;
-  -ms-transition: $args;
-  -o-transition: $args;
-  transition: $args;
-}
-@mixin transform($args...) {
-  -webkit-transform: $args;
-  -moz-transform: $args;
-  -ms-transform: $args;
-  -o-transform: $args;
-  transform: $args;
-}
