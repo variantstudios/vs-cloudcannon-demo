@@ -1,11 +1,15 @@
 a {
   color: $link;
-  text-decoration: none;
   &:hover {
     color: $hover;
-    text-decoration: underline;
   }
   &:visited {
     color: $visited;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  a {
+    text-decoration: none;
   }
 }

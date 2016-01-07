@@ -12,25 +12,3 @@ ul.pager {
     }
   }
 }
-.pagination {
-  text-align: center;
-  width: 100%;
-  border-top: 1px solid $color-four;
-  a {
-    margin: 1em .5em 0;
-    letter-spacing: 0;
-    transition: .2s;
-    display: inline-block;
-    text-decoration: none;
-    &:hover, &:active { letter-spacing: 1px; }
-  }
-  span {
-    margin: 1em .5em 0;
-    color: $color-four;
-  }
-  .newer, .older { width: 80px; }
-  .newer { float: left; }
-  .older { float: right; }
-}
-
-.no-border { border: none !important; }

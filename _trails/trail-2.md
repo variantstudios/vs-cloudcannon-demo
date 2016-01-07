@@ -1,15 +1,15 @@
 ---
 layout: trail
-title: Trail Demo
-permalink: /trails/trail-1/
-location: Fort Collins, CO
-rating: 4
+title: Trail Demo the second
+permalink: /trails/trail-2/
+location: Loveland, CO
+rating: 3
 distance: 3.1 miles
-featured: true
-dog-friendly: true
-water: true
-bathrooms: true
-mountain-biking: true
+featured: false
+dog-friendly: false
+water: false
+bathrooms: false
+mountain-biking: false
 images:
   - title: Test Photo
     image_path: /assets/images/gallery/thumb/photo-1440635592348-167b1b30296f_sm.jpg
