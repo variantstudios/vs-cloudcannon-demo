@@ -1,20 +1,65 @@
 ---
-layout: front
-title: "VS CloudCannon Demo"
-subtitle: "TVivamus pellentesque sodales mi, vel varius odio ultricies et. Donec dictum est metus, in pharetra eros tincidunt sit amet. Donec non tempor tellus. Sed egestas nisl sollicitudin ante aliquam, ut vestibulum velit iaculis."
-description: "TVivamus pellentesque sodales mi, vel varius odio ultricies et. Donec dictum est metus, in pharetra eros tincidunt sit amet."
+layout: default
+title: "Front Range TRAILS"
 ---
-<header class="front-header">
-  <h1>{{ page.title }}</h1>
-  <h4 class="subtitle">{{ page.subtitle }}</h4>
-</header>
-<div class="grid clearfix front-block">
-  <h2>Gallery</h2>
-  <!-- Needs randomizer -->
-  {% for item in site.gallery limit:5 %}
-    <div class="grid-item">
-      <img class="gallery-item" src="{{ item.images.first.small_image_path }}" alt="{{ item.title }}">
+
+<div class="content-wrapper front">
+  <main role="main">
+    <header class="front-header">
+      <h1>{{ page.title }}</h1>
+    </header>
+    <div class="clearfix front-block slider">
+      <!-- Still needs slider -->
     </div>
-  {% endfor %}
-  <div><a class="view-more" href="/gallery/">View full gallery</a></div>
+    <div class="clearfix front-block featured-block">
+      <div class="featured-trail-left">
+        <h5>Featured Trail</h5>
+        {% for trail in site.trails %}
+          {% if trail.featured %}
+            <div class="trail-left">
+              <h4 class="trail-name"><a href="{{ trail.permalink }}">{{ trail.title }}</a></h4>
+              <a href="{{ trail.permalink }}"><img class="trail-image" src="{{ trail.images.first.image_path }}" alt="{{ item.title }}" /></a>
+            </div>
+            <div class="trail-right">
+              <div class="trail-location">
+                <span class="location-icon"></span>
+                <span class="location">{{ trail.location }}</span>
+                <span class="rating">{{ trail.rating }}</span>
+              </div>
+              <div class="trail-desc">{{ trail.content }}</div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+      <div class="recent-trail-right">
+        <h5>Recently Added Trails</h5>
+        {% for trail in site.trails limit:4 %}
+            <h4 class="trail-name"><a href="{{ trail.permalink }}">{{ trail.title }}</a></h4>
+        {% endfor %}
+        <div><a class="view-more" href="/trails/">View All Trails ></a></div>
+      </div>
+    </div>
+    <div class="clearfix front-block gallery-and-blog">
+      <div class="gallery-square">
+        {% for item in site.gallery limit:4 %}
+          <div class="grid-item">
+            <img class="gallery-item" src="{{ item.images.first.small_image_path }}" alt="{{ item.title }}">
+          </div>
+        {% endfor %}
+        <div><a class="view-more" href="/gallery/">View gallery</a></div>
+      </div>
+      <div class="blog-square">
+        {% for item in site.blog limit:1 %}
+          <a href="{{ item.permalink }}">
+            <div class="blog-teaser">
+              <img class="blog-image" src="{{ item.image_path }}" alt="{{ item.title }}">
+              <div class="blog-date">{{ item.date }}</div>
+              <h4 class="blog-name">{{ item.title }}</h4>
+              <div class="blog-content">{{ item.description }}</div>
+            </div>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  </main>
 </div>

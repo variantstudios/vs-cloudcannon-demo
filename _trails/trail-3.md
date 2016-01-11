@@ -1,6 +1,6 @@
 ---
 layout: trail
-title: Trail Demo 2
+title: Trail Demo 3
 permalink: /trails/trail-1/
 location: Fort Collins, CO
 rating: 4
