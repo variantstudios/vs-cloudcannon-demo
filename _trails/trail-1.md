@@ -1,15 +1,22 @@
 ---
 layout: trail
-title: Trail Demo
+title: Trail Demo 1
 permalink: /trails/trail-1/
 location: Fort Collins, CO
 rating: 4
 distance: 3.1 miles
+starting_elevation: 9,482 ft.
+elevation_gain: 9,482 ft.
 featured: true
-dog-friendly: true
-water: true
-bathrooms: true
-mountain-biking: true
+amenities:
+  - title: Dog Friendly
+    option: true
+  - title: Water
+    option: true
+  - title: Bathrooms
+    option: true
+  - title: Mountain Biking
+    option: true
 images:
   - title: Test Photo
     image_path: /assets/images/gallery/thumb/photo-1440635592348-167b1b30296f_sm.jpg

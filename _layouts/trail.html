@@ -4,10 +4,64 @@ layout: default
 
 <div class="content-wrapper full-width">
   <main class="wrap">
-      <header>
-        <h1>{{ page.title }}</h1>
-        <h3 class="subtitle">{{ page.subtitle }}</h3>
-      </header>
-      <section>{{ content }}</section>
+	  <ul class="grid">
+	  	{% for item in page.images %}
+	  		<a class="gallery-group" href="{{ item.permalink }}">
+		  		{% if item.image_path == page.images.first.image_path %}
+		  			<img class="full-width-header-image gallery-item" src="{{ item.image_path }}" alt="{{ page.title }}">
+		  		{% else %}
+		  			<img class="icon-size-image gallery-item" src="{{ item.image_path }}" alt="{{ page.title }}">
+		  		{% endif %}
+		  	</a>
+	  	{% endfor %}
+	  </ul>
+	<h1>{{ page.title }} <span>{{ page.rating }}</span></h1>
+	<section class="trail-content">
+		<div class="trail-info">
+			<span class="location-icon"></span>
+			<span>{{ page.location }}</span>
+			<span class="distance-icon"></span>
+			<span>{{ page.distance }}</span>
+			<span class="difficulty-icon"></span>
+			<span>{{ page.difficulty }}</span>
+		</div>
+		<div class="start-elevation">
+			<span class="label">Start Elevation</span>
+			<span>{{ page.start_elevation }}</span>
+		</div>
+		<div class="elevation-gain">
+			<span class="label">Elevation Gain</span>
+			<span>{{ page.elevation_gain }}</span>
+		</div>
+		{{ content }}
+	</section>
+	<section class="side-column">
+		<div class="trail-map">
+			<!-- Include file -->
+		</div>
+		<div class="other-details">
+			<h4>Other Details</h4>
+			<div>
+	  			{% for item in page.amenities %}
+		  			{% if item.option %}
+		  				{{ item.title }}
+		  			{% endif %}
+	  			{% endfor %}
+	  		</div>
+		</div>
+		<div class="similar-trails">
+			<h4>Similar Trails</h4>
+			{% assign trails = site.trails | sort: 'distance' reverse | sort: 'difficulty' reverse %}
+			{% assign similar = "" %}
+			{% for trail-list in trails %}
+	  			{% if trail-list.location == page.location %}
+	  				{{ similar | push: trail-list.title }}
+	  			{% endif %}
+			{% endfor %}
+			{% for trail in similar limit:3 %}
+				<div><a href="{{ trail.permalink }}">{{ content }}</a></div>
+			{% endfor %}
+		</div>
+	</section>
   </main>
 </div>
