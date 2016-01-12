@@ -43,7 +43,7 @@ layout: default
 		  <link href='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.css' rel='stylesheet' />
 		  <script>
 		      L.mapbox.accessToken = 'pk.eyJ1IjoidmFyaWFudHN0dWRpb3N0ZWFtIiwiYSI6IkJOeWd1dWMifQ.EpahpXGBtmn_3IROFYRS5w';
-		      var map = L.mapbox.map('map-individual', 'mapbox.streets').setView([40.120231, -105.202415], 9);
+		      var map = L.mapbox.map('map-individual', 'mapbox.streets').setView([{{ page.latitude }}, {{ page.longitude }}], 12);
 		      var marker = L.marker([{{ page.latitude }}, {{ page.longitude }}]).addTo(map);
 		      map.scrollWheelZoom.disable();
 		  </script>
