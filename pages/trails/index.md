@@ -5,6 +5,17 @@ permalink: /trails/
 ---
 
 <div class="clearfix">
+  <div id="map-all"></div>
+  <script src='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.js'></script>
+  <link href='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.css' rel='stylesheet' />
+  <script>
+      L.mapbox.accessToken = 'pk.eyJ1IjoidmFyaWFudHN0dWRpb3N0ZWFtIiwiYSI6IkJOeWd1dWMifQ.EpahpXGBtmn_3IROFYRS5w';
+      var map = L.mapbox.map('map-all', 'mapbox.streets').setView([40.120231, -105.202415], 9);
+      {% for item in site.trails %}
+        var marker = L.marker([{{ item.latitude }}, {{ item.longitude }}]).addTo(map);
+      {% endfor %}
+      map.scrollWheelZoom.disable();
+  </script>
   <ul class="trails">
     {% for item in site.trails limit:5 %}
       <li itemscope class="trail-item">
