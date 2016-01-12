@@ -21,7 +21,7 @@ permalink: /trails/
       <li itemscope class="trail-item">
         <a href="{{ item.permalink }}"><h2 class="trail-name">{{ item.title }}</h2></a>
         <!-- Needs to link to map functions -->
-        <a href="#"><div class="location">{{ item.location }}</div></a>
+        <a href="{{ item.permalink }}"><div class="location">{{ item.location }}</div></a>
         <div class="rating">{{ item.rating }}</div>
         <div class="description">{{ item.content }}</div>
       </li>
