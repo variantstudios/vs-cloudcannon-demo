@@ -20,15 +20,30 @@ permalink: /trails/
   	<h3>Filter Trails</h3>
   	<div class="filter-section">
   		<div>Difficulty</div>
+      <form action="">
+        {% for difficulty in site.trails.difficulty %}
+          <div class="form-item form-type-bef-checkbox">
+            <input type="checkbox" name="difficulty" value="{{ difficulty }}">{{ difficulty }}
+          </div>
+        {% endfor %}
+      </form>
     </div>
   	<div class="filter-section">
   		<div>Rating</div>
+      <!-- Needs on / off options-->
+      <div class="star-icon"></div>
+      <div class="star-icon"></div>
+      <div class="star-icon"></div>
+      <div class="star-icon"></div>
+      <div class="star-icon"></div>
     </div>
   	<div class="filter-section">
   		<div>Amenities</div>
+      <!-- -->
     </div>
   	<div class="filter-section">
   		<div>Distance (miles)</div>
+      <input type="text" id="edit-field-distance-miles-value" name="field_distance_miles_value" value="" size="30" maxlength="128" class="form-text">
     </div>
   </div>
 </div>

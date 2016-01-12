@@ -2,12 +2,14 @@
 layout: trail
 title: Trail Demo 1
 permalink: /trails/trail-1/
-location: Fort Collins, CO
+location: Boulder, CO
+latitude: 40.243284
+longitude: -105.628973
 rating: 4
 distance: 3.1 miles
 starting_elevation: 9,482 ft.
 elevation_gain: 9,482 ft.
-featured: true
+featured: false
 amenities:
   - title: Dog Friendly
     option: true

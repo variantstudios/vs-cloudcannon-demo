@@ -1,22 +1,24 @@
 ---
 layout: trail
 title: Trail Demo 3
-permalink: /trails/trail-1/
-location: Fort Collins, CO
-rating: 4
+permalink: /trails/trail-3/
+location: Loveland, CO
+latitude: 40.415984
+longitude: -105.218758
+rating: 3
 distance: 3.1 miles
 starting_elevation: 9,482 ft.
 elevation_gain: 9,482 ft.
-featured: true
+featured: false
 amenities:
   - title: Dog Friendly
     option: true
   - title: Water
     option: true
   - title: Bathrooms
-    option: true
+    option: false
   - title: Mountain Biking
-    option: true
+    option: false
 images:
   - title: Test Photo
     image_path: /assets/images/gallery/thumb/photo-1440635592348-167b1b30296f_sm.jpg
