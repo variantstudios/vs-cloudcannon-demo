@@ -1,16 +1,18 @@
 ---
 layout: trail
 title: Trail Demo 4
-permalink: /trails/trail-1/
-location: Fort Collins, CO
-rating: 4
+permalink: /trails/trail-4/
+location: Rocky Mountain National Park, CO
+latitude: 40.451948
+longitude: -105.657614
+rating: 1
 distance: 3.1 miles
 starting_elevation: 9,482 ft.
 elevation_gain: 9,482 ft.
-featured: true
+featured: false
 amenities:
   - title: Dog Friendly
-    option: true
+    option: false
   - title: Water
     option: true
   - title: Bathrooms

@@ -1,13 +1,15 @@
 ---
 layout: trail
 title: Trail Demo 5
-permalink: /trails/trail-1/
+permalink: /trails/trail-5/
 location: Fort Collins, CO
-rating: 4
+latitude: 40.405877
+longitude: -105.340771
+rating: 2
 distance: 3.1 miles
 starting_elevation: 9,482 ft.
 elevation_gain: 9,482 ft.
-featured: true
+featured: false
 amenities:
   - title: Dog Friendly
     option: true

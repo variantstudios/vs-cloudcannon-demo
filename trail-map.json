@@ -1,0 +1,12 @@
+---
+layout: null
+sitemap:
+  exclude: 'yes'
+---
+[
+	{% for trail in site.trails %} {
+        "lat": "{{ trail.latitude}}",
+        "lon": "{{ trail.longitude }}"
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+]

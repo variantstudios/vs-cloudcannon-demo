@@ -1,9 +1,11 @@
 ---
 layout: trail
 title: Trail Demo 2
-permalink: /trails/trail-1/
-location: Fort Collins, CO
-rating: 4
+permalink: /trails/trail-2/
+location: Estes Park, CO
+latitude: 40.375762
+longitude: -105.472149
+rating: 5
 distance: 3.1 miles
 starting_elevation: 9,482 ft.
 elevation_gain: 9,482 ft.
@@ -12,7 +14,7 @@ amenities:
   - title: Dog Friendly
     option: true
   - title: Water
-    option: true
+    option: false
   - title: Bathrooms
     option: true
   - title: Mountain Biking
