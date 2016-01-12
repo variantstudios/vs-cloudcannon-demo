@@ -15,31 +15,6 @@ $(document).ready(function() {
         $('html').addClass('no-mq');
     };
 
-    $(".js .about-content h2").each(function() {
-        $(".toc").append(
-            "<li>" +
-	            "<a href='#" + $(this).attr("id") + "'>" +
-	            	$(this).text() +
-	            "</a>" +
-            "</li>");
-    });
-
-    // Resets default activity when linking to an ID so we can get a fancy scroll animation
-    $('a[href*=#]').click(function(){
-        var offsetTop = $($.attr(this, 'href')).offset().top;
-        if ( $(window).width() > 786 ) {
-            $('html, body').stop().animate( {scrollTop: offsetTop - 130 }, 500 );
-        } else {
-            $('html, body').stop().animate( {scrollTop: offsetTop - 10 }, 500 );
-        }
-        return false;
-    });
-
-    $('.collapse').click(function() {
-        $('.toc').toggle(500);
-        //$('.vert').toggleClass('norm');
-    });
-
     // All PDF's open in new tab
     $(function() { $('a[href$=".pdf"]').prop('target', '_blank'); });
 

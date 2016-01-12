@@ -38,7 +38,15 @@ layout: default
 		{{ content }}
 	</section>
 	<section class="side-column">
-		<div class="trail-map" id="map"></div>
+		<div class="trail-map" id="map-individual"></div>
+		  <script src='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.js'></script>
+		  <link href='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.css' rel='stylesheet' />
+		  <script>
+		      L.mapbox.accessToken = 'pk.eyJ1IjoidmFyaWFudHN0dWRpb3N0ZWFtIiwiYSI6IkJOeWd1dWMifQ.EpahpXGBtmn_3IROFYRS5w';
+		      var map = L.mapbox.map('map-individual', 'mapbox.streets').setView([{{ page.latitude }}, {{ page.longitude }}], 12);
+		      var marker = L.marker([{{ page.latitude }}, {{ page.longitude }}]).addTo(map);
+		      map.scrollWheelZoom.disable();
+		  </script>
 		<div class="other-details">
 			<h4>Other Details</h4>
 			<div>
