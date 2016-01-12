@@ -6,15 +6,27 @@ permalink: /trails/
 
 <div class="clearfix">
   <div id="map-all"></div>
-  <script src='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.js'></script>
-  <link href='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.css' rel='stylesheet' />
-  <script>
-      L.mapbox.accessToken = 'pk.eyJ1IjoidmFyaWFudHN0dWRpb3N0ZWFtIiwiYSI6IkJOeWd1dWMifQ.EpahpXGBtmn_3IROFYRS5w';
-      var map = L.mapbox.map('map-all', 'mapbox.streets').setView([40.120231, -105.202415], 9);
-      {% for item in site.trails %}
-        var marker = L.marker([{{ item.latitude }}, {{ item.longitude }}]).addTo(map);
-      {% endfor %}
-      map.scrollWheelZoom.disable();
+
+  <script type="text/javascript">
+    var map = L.map('map-all').setView([40.350231, -105.202415], 10);
+    // L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+    //     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+    //     maxZoom: 18,
+    //     id: 'variantstudiosteam.om9o27nj',
+    //     accessToken: 'pk.eyJ1IjoidmFyaWFudHN0dWRpb3N0ZWFtIiwiYSI6IkJOeWd1dWMifQ.EpahpXGBtmn_3IROFYRS5w'
+
+    // }).addTo(map);
+     L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
+        maxZoom: 18
+     }).addTo(map);
+
+    {% for item in site.trails %}
+        var marker = L.marker([{{ item.latitude }}, {{ item.longitude }}]);
+        map.addLayer(marker);
+        marker.bindPopup("<a href='{{ item.permalink }}'><strong>{{ item.title }}</strong></a>");
+    {% endfor %}
+
   </script>
   <ul class="trails">
     {% for item in site.trails limit:5 %}
