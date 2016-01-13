@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="30px" height="29px" viewBox="0 0 30 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Trails-FN" sketch:type="MSArtboardGroup" transform="translate(-527.000000, -1075.000000)" fill="#D79111">
+            <g id="Group" sketch:type="MSLayerGroup" transform="translate(527.000000, 1075.000000)">
+                <path d="M15,23.3114211 L24.27,29 L21.8175,18.2715263 L30,11.0566316 L19.2135,10.1148947 L15,0 L10.7865,10.1148947 L0,11.0566316 L8.1825,18.2715263 L5.73,29 L15,23.3114211 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

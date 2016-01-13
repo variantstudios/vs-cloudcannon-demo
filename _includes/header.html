@@ -1,10 +1,13 @@
-<div class="header-bg"></div>
-<header itemscope class="wrap clearfix">
-  <div class="nav-header">
-    <div class="logo-section">
-      <a href="/"><img class="site-logo" src="/assets/images/logo.svg" alt="{{site.title}}" itemprop="logo"></a>
-    </div>
-    <nav class="top-nav" id="menu">
+<header class="site-header" role="banner">
+  <div class="wrap">
+    <picture class="logo">
+      <a href="/" title="Home">
+        <source type="image/svg+xml" srcset="/assets/images/logos/logo.svg">
+        <img src="/assets/images/logos/logo.png" alt="Put the site name here">
+      </a>
+    </picture>
+    <nav class="main-nav" role="navigation">
+      <button class="menu-btn">Menu</button>
       {% include nav.html nav=site.data.menu %}
     </nav>
   </div>

@@ -1,3 +1,12 @@
+#map-all {
+  height: 400px;
+  position: relative;
+}
+#map-individual {
+  height: 250px;
+  position: relative;
+}
+
 .view-trails.view-display-id-page {
   .views-row {
     padding: 1em 0;
@@ -67,7 +76,9 @@
       display: none;
     }
   }
+
 }
+
 .node-trails.node-teaser {
   .section-one {
     h2, .field-name-field-region, .field-name-field-star-rating {
@@ -86,6 +97,7 @@
       margin-bottom: 0;
     }
   }
+  
   .field-name-field-star-rating .fivestar-basic, .fivestar-default {
     .field-item  {
       margin: 0;
@@ -105,13 +117,8 @@
       }
     }
   }
+
 }
-#map-all {
-  height: 400px;
-  margin: 2em auto 2em;
-}
-#map-individual {
-  height: 200px;
-  width: 200px;
-  margin: 1em;
-}
+
+
+

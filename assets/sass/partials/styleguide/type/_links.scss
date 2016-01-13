@@ -13,3 +13,18 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
   }
 }
+
+
+.outline-btn {
+  a {
+    display: inline-block;
+    color: $color-two;
+    text-decoration: none;
+    border: 5px solid $color-two;
+    font-family: $heading-font-family;
+    padding: .3em 1.3em;
+    font-size: 1.3em;
+    font-weight: 700;
+    text-shadow: 0px 2px 4px rgba(0,0,0,0.50);
+  }
+}

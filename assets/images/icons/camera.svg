@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="106px" height="97px" viewBox="0 0 106 97" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+    <title>camera-alt</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Front" sketch:type="MSArtboardGroup" transform="translate(-448.000000, -1666.000000)" fill="#FFFFFF">
+            <g id="camera-alt" sketch:type="MSLayerGroup" transform="translate(452.000000, 1668.000000)">
+                <ellipse id="Oval" sketch:type="MSShapeGroup" cx="49.183252" cy="49.6315315" rx="15.68" ry="15.8222222"></ellipse>
+                <path d="M34.3,0 L25.48,9.88888889 L9.8,9.88888889 C4.41,9.88888889 0,14.3388889 0,19.7777778 L0,79.1111111 C0,84.55 4.41,89 9.8,89 L88.2,89 C93.59,89 98,84.55 98,79.1111111 L98,19.7777778 C98,14.3388889 93.59,9.88888889 88.2,9.88888889 L72.52,9.88888889 L63.7,0 L34.3,0 L34.3,0 Z M49,74.1666667 C35.28,74.1666667 24.5,63.2888889 24.5,49.4444444 C24.5,35.6 35.28,24.7222222 49,24.7222222 C62.72,24.7222222 73.5,35.6 73.5,49.4444444 C73.5,63.2888889 62.72,74.1666667 49,74.1666667 L49,74.1666667 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

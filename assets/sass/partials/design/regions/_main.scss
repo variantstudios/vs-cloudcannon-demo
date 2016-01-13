@@ -4,17 +4,11 @@ main {
   padding: 2em 0;
 }
 
-.not-front {
+.page-trails, .node-type-trails, .page-gallery, .node-type-gallery {
   main {
     .wrap {
       margin-top: -17em;
     }
   }
 
-}
-
-.front {
-  main {
-    margin-top: 630px;
-  }
 }

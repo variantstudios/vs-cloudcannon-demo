@@ -1,5 +1,6 @@
 header.site-header {
   @include clearfix;
+
 }
 .logo {
   @include breakpoint($tablet, $no-query: '.no-mq') {
@@ -13,7 +14,7 @@ header.site-header {
   }
 }
 
-.not-front {
+.page-trails, .node-type-trails, .page-gallery, .node-type-gallery, .node-type-page {
   header.site-header {
     background: url('../images/header-subpages.jpg');
     height: 415px;

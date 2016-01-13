@@ -1,0 +1,22 @@
+.header-image-static-exsists {
+  main .wrap {
+    margin-top: -300px;
+  }
+}
+
+.header-image-static {
+  img {
+    @include box-shadow(0,2px,4px,rgba(0,0,0,0.5));
+  }
+}
+
+.view-our-team {
+  .views-row {
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+      @include float-span(4);
+    }
+    img {
+      width: 100%;
+    }
+  }
+}

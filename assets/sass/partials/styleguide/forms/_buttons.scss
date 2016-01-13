@@ -1,5 +1,9 @@
 input[type="submit"] {
-  @include btn(#999, #fff, #6286BD, 3px, $normal);
-  @include grad(#52BAD5, #5276A0, $stop: 100%); 
+  @include btn($link, #fff, darken($link, 5%), 3px, $normal);
+  font-family: $heading-font-family;
+}
+
+input#edit-reset[type="submit"] {
+  @include btn(#861B1B, #fff, darken(#861B1B, 5%), 3px, $normal);
   font-family: $heading-font-family;
 }

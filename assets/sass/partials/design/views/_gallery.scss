@@ -1,0 +1,170 @@
+.gallery {
+  @include clearfix;
+  .gallery-item {
+    position: relative;
+    margin-bottom: 1.5em;
+    @include box-shadow(0,2px,4px,rgba(0,0,0,0.5));
+    &.views-row-odd {
+      @include breakpoint($tablet, $no-query: '.no-mq') {
+        @include grid-span(6,1);
+        clear: both;
+      }
+    }
+    &.views-row-even {
+      @include breakpoint($tablet, $no-query: '.no-mq') {
+        @include grid-span(6,7);
+      }
+    }
+    a {
+      line-height: 0;
+      display: block;
+    }
+  }
+  .gallery-title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+100 */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+    padding: 2em;
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.35em;
+    }
+  }
+
+  .view-filters {
+    //display: none;
+    //height: 0;
+    visibility: hidden;
+    position: absolute;
+    width: 50%;
+    background: rgba(255, 255, 255, 0.85);
+    z-index: 999;
+    left: 25%;
+    padding: 2em;
+    opacity: 0;
+    transition:  all 1s ease;
+    @include box-shadow(0,2px,4px,rgba(0,0,0,0.5));
+    top: 350px;
+    .description {
+      display: none;
+    }
+    &.opened {
+      display: block;
+      height: auto;
+      
+      visibility: visible;
+      opacity: 1;
+      transition:  all 1s ease;
+    }
+    .views-widget-filter-field_gallery_tags_tid {
+      float: none;
+    }
+    .form-checkboxes {
+      .form-item {
+        display: inline-block;
+        padding-right: .5em;
+        label {
+          font-weight: 700;
+          font-family: $font-family;
+          font-size: .9em;
+        }
+      } 
+    }
+  }
+  .close-gallery-filter {
+    display: none;
+    cursor: pointer;
+    color: #fff;
+    &.show {
+      display: block;
+      position: absolute;
+      top: 100px;
+      z-index: 9999;
+      right: 100px;
+      font-size: 2em;
+    }
+    &:before {
+      content: '';
+      background: url("../images/icons/close.svg") 0 0px no-repeat;
+      width: 37px;
+      height: 37px;
+      display: inline-block;
+      margin-right: .5em;
+      vertical-align: sub;
+    }
+  }
+  .open-gallery-filter {
+    cursor: pointer;
+    color: #fff;
+    font-family: $heading-font-family;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    &:before {
+      content: '';
+      background: url('../images/icons/tag.svg');
+      width: 24px;
+      height: 17px;
+      display: inline-block;
+      margin-right: .5em;
+    }
+  }
+}
+
+
+.node-gallery.node-teaser {
+    position: relative;
+    margin-bottom: 1.5em;
+    @include box-shadow(0,2px,4px,rgba(0,0,0,0.5));
+      @include breakpoint($tablet, $no-query: '.no-mq') {
+        @include float-span(5.8);
+    }
+    a {
+      line-height: 0;
+      display: block;
+    }
+  .gallery-title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+100 */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+    padding: 2em;
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.35em;
+    }
+  }
+}
+
+body:after {
+  transition:  all 0.5s ease;
+  content: '';
+  background: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: -998;
+}
+body.dim:after {
+  transition:  all 0.5s ease;
+  content: '';
+  background: rgba(14, 14, 14, 0.75);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 998;
+}
