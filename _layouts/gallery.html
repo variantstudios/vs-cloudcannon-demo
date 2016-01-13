@@ -8,9 +8,15 @@ layout: default
         <h1>{{ page.title }}</h1>
         <h3 class="subtitle">{{ page.subtitle }}</h3>
       </header>
-      <section>
+      <section class="clearfix">
       	{{ content }}
-	    {% include gallery.html %}
+        <ul class="grid">
+          {% for item in page.images %}
+            <li itemscope class="grid-item">
+              <a class="gallery" href="{{ item.large_image_path }}"><img class="gallery-item lrg" src="{{ item.small_image_path }}" alt="{{ item.title }}" itemprop="image"></a>
+            </li>
+          {% endfor %}
+        </ul>
 	  </section>
   </main>
 </div>
