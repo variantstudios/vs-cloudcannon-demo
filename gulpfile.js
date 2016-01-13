@@ -65,7 +65,7 @@ gulp.task('sass-deploy', function () {
 gulp.task('watch', function () {
     gulp.watch('assets/sass/**', ['compass']);
     gulp.watch('assets/js/dev/**.js', ['scripts']);
-    gulp.watch(['_config.yml', '_posts/**', '_events/**', '_gallery/**', 'news/**', 'pages/**', 'index.html', '_layouts/**.html', '_includes/**.html', '_data/**', 'all-events.json'], ['jekyll-rebuild']);
+    gulp.watch(['_config.yml', '_posts/**', '_trails/**', '_gallery/**', 'pages/**', 'index.html', '_layouts/**.html', '_includes/**.html', '_data/**', 'trail-map.json'], ['jekyll-rebuild']);
 });
 
 // Compile Compass/sass

@@ -5,16 +5,8 @@ permalink: /trails/
 ---
 
 <div id="map-all"></div>
-
 <script type="text/javascript">
   var map = L.map('map-all').setView([40.350231, -105.202415], 10);
-  // L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-  //     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-  //     maxZoom: 18,
-  //     id: 'variantstudiosteam.om9o27nj',
-  //     accessToken: 'pk.eyJ1IjoidmFyaWFudHN0dWRpb3N0ZWFtIiwiYSI6IkJOeWd1dWMifQ.EpahpXGBtmn_3IROFYRS5w'
-
-  // }).addTo(map);
    L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
       maxZoom: 18
@@ -25,9 +17,7 @@ permalink: /trails/
       map.addLayer(marker);
       marker.bindPopup("<a href='{{ item.permalink }}'><strong>{{ item.title }}</strong></a>");
   {% endfor %}
-
 </script>
-
 <div class="view-trails view-display-id-page">
   <div class="view-filters">
     <h3>Filter Trails</h3>
@@ -66,42 +56,37 @@ permalink: /trails/
       <div class="section-one">
         <h2 class="trail-name"><a href="{{ item.permalink }}">{{ item.title }}</a></h2>
         <div class="field field-name-field-region field-type-taxonomy-term-reference field-label-above">
-          <div class="field-label">Region:&nbsp;</div>
+          <div class="field-label">Region:</div>
           <div class="field-items">{{ item.location }}</div>
         </div>
         <div class="field field-name-field-star-rating field-type-fivestar field-label-hidden">
-        <div class="field-items fivestar-default">
+          <div class="field-items fivestar-default">
             <div class="form-item form-type-item">
-                <div class="fivestar-widget-static fivestar-widget-static-vote fivestar-widget-static-5 clearfix">
-                  <div class="star star-1 star-odd star-first">
-                    <span class="on"></span>
-                  </div>
-                  <div class="star star-2 star-even">
-                    <span class="on"></span>
-                  </div>
-                  <div class="star star-3 star-odd">
-                    <span class="on"></span>
-                  </div>
-                  <div class="star star-4 star-even">
-                    <span class="on"></span>
-                  </div>
-                  <div class="star star-5 star-odd star-last">
-                    <span class="off"></span>
-                  </div>
+              <div class="fivestar-widget-static fivestar-widget-static-vote fivestar-widget-static-5 clearfix">
+                <div class="star star-1 star-odd star-first">
+                  <span class="on"></span>
                 </div>
+                <div class="star star-2 star-even">
+                  <span class="on"></span>
+                </div>
+                <div class="star star-3 star-odd">
+                  <span class="on"></span>
+                </div>
+                <div class="star star-4 star-even">
+                  <span class="on"></span>
+                </div>
+                <div class="star star-5 star-odd star-last">
+                  <span class="off"></span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div class="section-two">
-        <div class="description">{{ item.content }}</div>
+        <div class="description">{{ item.content | truncate: 200 }}</div>
       </div>
     </div>
   {% endfor %}
   </div>
-
-
 </div>
-
-
-
