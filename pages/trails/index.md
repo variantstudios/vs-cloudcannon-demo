@@ -36,12 +36,29 @@ permalink: /trails/
           </div>
           <div class="views-exposed-widget">
             <div>Rating</div>
-            <!-- Needs on / off options-->
-            <div class="star-icon"></div>
-            <div class="star-icon"></div>
-            <div class="star-icon"></div>
-            <div class="star-icon"></div>
-            <div class="star-icon"></div>
+              <div class="field field-name-field-star-rating field-type-fivestar field-label-hidden">
+                <div class="field-items fivestar-default">
+                  <div class="form-item form-type-item">
+                    <div class="fivestar-widget-static fivestar-widget-static-vote fivestar-widget-static-5 clearfix">
+                      <div class="star star-1 star-odd star-first">
+                        <span class="on"></span>
+                      </div>
+                      <div class="star star-2 star-even">
+                        <span class="on"></span>
+                      </div>
+                      <div class="star star-3 star-odd">
+                        <span class="on"></span>
+                      </div>
+                      <div class="star star-4 star-even">
+                        <span class="on"></span>
+                      </div>
+                      <div class="star star-5 star-odd star-last">
+                        <span class="off"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
           </div>
           <div class="views-exposed-widget">
             <div>Amenities</div>
@@ -55,7 +72,6 @@ permalink: /trails/
       </div>
     </form>
   </div>
-
   <div class="view-content">
   {% for item in site.trails limit:5 %}
     <div itemscope class="views-row node-trails node-teaser">

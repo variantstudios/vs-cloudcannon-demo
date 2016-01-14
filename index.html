@@ -1,23 +1,9 @@
 ---
-layout: default
+layout: front
 title: "Front Range TRAILS"
 ---
-
 <div class="content-wrapper front">
   <main role="main">
-      <!-- Still needs slider -->
-    <div class="front-block flexslider">
-      <ul class="slides">
-        {% for trail in site.trails limit:5 %}
-          <li>
-            <img class="trail-image" src="{{ trail.images.first.image_path }}" alt="{{ trail.title }}" />
-            <div class="trail-location">{{ trail.location }}</div>
-            <h4 class="trail-name"><a href="{{ trail.permalink }}">{{ trail.title }}</a></h4>
-            <div><a href="{{ trail.permalink }}">View Trail</a></div>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
     <div class="clearfix front-block" id="block-views-trails-block-2">
       <div class="featured-trail-left">
         <h2>Featured Trail</h2>
@@ -33,13 +19,29 @@ title: "Front Range TRAILS"
                   <div class="trail-location">
                     <span class="location-icon"></span>
                     <span class="location">{{ trail.location }}</span>
-                    <ul class="rating">
-                      <li class="star"></li>
-                      <li class="star"></li>
-                      <li class="star"></li>
-                      <li class="star"></li>
-                      <li class="star"></li>
-                    </ul>
+                    <div class="field field-name-field-star-rating field-type-fivestar field-label-hidden">
+                      <div class="field-items fivestar-default">
+                        <div class="form-item form-type-item">
+                          <div class="fivestar-widget-static fivestar-widget-static-vote fivestar-widget-static-5 clearfix">
+                            <div class="star star-1 star-odd star-first">
+                              <span class="on"></span>
+                            </div>
+                            <div class="star star-2 star-even">
+                              <span class="on"></span>
+                            </div>
+                            <div class="star star-3 star-odd">
+                              <span class="on"></span>
+                            </div>
+                            <div class="star star-4 star-even">
+                              <span class="on"></span>
+                            </div>
+                            <div class="star star-5 star-odd star-last">
+                              <span class="off"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div class="trail-desc">{{ trail.content | truncate: 200 }}</div>
                 </div>
@@ -48,35 +50,13 @@ title: "Front Range TRAILS"
           {% endfor %}
         </div>
       </div>
-      <div class="recent-trail-right">
-        <h5>Recently Added Trails</h5>
-        {% for trail in site.trails limit:4 %}
-            <h4 class="trail-name"><a href="{{ trail.permalink }}">{{ trail.title }}</a></h4>
-        {% endfor %}
-        <div><a class="view-more" href="/trails/">View All Trails ></a></div>
-      </div>
     </div>
-    <div class="clearfix front-block gallery-and-blog">
-      <div class="gallery-square" id="block-views-gallery-block-1">
-        {% for item in site.gallery limit:4 %}
-          <div class="grid-item">
-            <img class="gallery-item" src="{{ item.images.first.small_image_path }}" alt="{{ item.title }}">
-          </div>
-        {% endfor %}
-        <div><a class="view-more" href="/gallery/">View gallery</a></div>
-      </div>
-      <div class="blog-square">
-        {% for item in site.blog limit:1 %}
-          <a href="{{ item.permalink }}">
-            <div class="blog-teaser">
-              <img class="blog-image" src="{{ item.image_path }}" alt="{{ item.title }}">
-              <div class="blog-date">{{ item.date }}</div>
-              <h4 class="blog-name">{{ item.title }}</h4>
-              <div class="blog-content">{{ item.description }}</div>
-            </div>
-          </a>
-        {% endfor %}
-      </div>
+    <div class="recent-trail-right" id="block-views-trails-block-3">
+      <h5>Recently Added Trails</h5>
+      {% for trail in site.trails limit:4 %}
+          <h4 class="trail-name"><a href="{{ trail.permalink }}">{{ trail.title }}</a></h4>
+      {% endfor %}
+      <div><a class="view-more" href="/trails/">View All Trails ></a></div>
     </div>
   </main>
 </div>
