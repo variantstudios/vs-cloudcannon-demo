@@ -1,4 +1,4 @@
-#map-all {
+#leaflet-map {
   height: 400px;
   position: relative;
 }
@@ -6,11 +6,8 @@
   height: 250px;
   position: relative;
 }
-
 .view-trails.view-display-id-page {
-  .views-row {
-    padding: 1em 0;
-  }
+  .views-row { padding: 1em 0; }
   .attachment {
     @include clearfix;
     margin-bottom: 2em;
@@ -29,7 +26,6 @@
       @include grid-span(4,9);
     }
   }
-
   // Filters
   .views-exposed-form {
     label {
@@ -47,9 +43,6 @@
           font-size: .9em;
         }
       } 
-    }
-    .views-widget .description {
-      display: none;
     }
     .views-exposed-widget {
       padding: 1em 0;
@@ -72,53 +65,34 @@
       height: 20px;
       width: 20px;
     }
-    label.option {
-      display: none;
-    }
+    label.option { display: none; }
   }
-
 }
-
 .node-trails.node-teaser {
   .section-one {
-    h2, .field-name-field-region, .field-name-field-star-rating {
+    h3, .field-name-field-region, .field-name-field-star-rating {
       @include breakpoint($tablet, $no-query: '.no-mq') {
         display: inline-block;
         padding-right: 1em;
         vertical-align: middle;
       }
-      .field-label, .field-items {
-        display: inline-block;
-      }
+      .field-label, .field-items { display: inline-block; }
     }
   }
   .section-two {
-    p {
-      margin-bottom: 0;
-    }
+    p { margin-bottom: 0; }
   }
-  
   .field-name-field-star-rating .fivestar-basic, .fivestar-default {
-    .field-item  {
-      margin: 0;
-    }
+    .field-item  { margin: 0; }
     .star {
       float: left;
       width: 20px;
       height: 20px;
       margin-top: 0px;
-      background: url('../images/icons/star-small.svg') no-repeat ;
+      background: url('../images/icons/star-small.svg') no-repeat;
       margin-right: 5px;
-      .on {
-        background: url('../images/icons/star-small.svg') no-repeat ;
-      }
-      .off {
-        background: url('../images/icons/star-small-off.svg') no-repeat ;
-      }
+      .on { background: url('../images/icons/star-small.svg') no-repeat; }
+      .off { background: url('../images/icons/star-small-off.svg') no-repeat; }
     }
   }
-
 }
-
-
-

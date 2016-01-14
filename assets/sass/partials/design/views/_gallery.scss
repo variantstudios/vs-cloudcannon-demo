@@ -37,7 +37,6 @@
       font-size: 1.35em;
     }
   }
-
   .view-filters {
     //display: none;
     //height: 0;
@@ -116,14 +115,12 @@
     }
   }
 }
-
-
 .node-gallery.node-teaser {
     position: relative;
     margin-bottom: 1.5em;
     @include box-shadow(0,2px,4px,rgba(0,0,0,0.5));
-      @include breakpoint($tablet, $no-query: '.no-mq') {
-        @include float-span(5.8);
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+      @include float-span(5.8);
     }
     a {
       line-height: 0;
@@ -147,7 +144,6 @@
     }
   }
 }
-
 body:after {
   transition:  all 0.5s ease;
   content: '';

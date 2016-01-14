@@ -4,14 +4,13 @@ title: Trails
 permalink: /trails/
 ---
 
-<div id="map-all"></div>
+<div id="leaflet-map"></div>
 <script type="text/javascript">
-  var map = L.map('map-all').setView([40.350231, -105.202415], 10);
+  var map = L.map('leaflet-map').setView([40.350231, -105.202415], 10);
    L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
       maxZoom: 18
    }).addTo(map);
-
   {% for item in site.trails %}
       var marker = L.marker([{{ item.latitude }}, {{ item.longitude }}]);
       map.addLayer(marker);
@@ -20,41 +19,48 @@ permalink: /trails/
 </script>
 <div class="view-trails view-display-id-page">
   <div class="view-filters">
-    <h3>Filter Trails</h3>
-    <div class="filter-section">
-      <div>Difficulty</div>
-      <form action="">
-        {% for difficulty in site.trails.difficulty %}
-          <div class="form-item form-type-bef-checkbox">
-            <input type="checkbox" name="difficulty" value="{{ difficulty }}">{{ difficulty }}
+    <h5 class="block-title">Filter Trails</h5>
+    <form action="/trails">
+      <div class="filter-section" class="ctools-auto-submit-full-form ctools-auto-submit-processed jquery-once-2-processed" id="views-exposed-form-trails-page">
+        <div class="views-exposed-form views-exposed-widgets">
+          <div id="edit-field-difficulty-tid-wrapper" class="views-exposed-widget views-widget-filter-field_difficulty_tid">
+            <label for="edit-field-difficulty-tid">Difficulty</label>
+            <div class="views-widget">
+              {% for difficulty in site.trails.difficulty %}
+                <div class="form-item form-type-select form-item-field-difficulty-tid form-checkboxes bef-select-as-checkboxes bef-required-filter-processed bef-checkboxes form-item form-type-bef-checkbox form-item-edit-field-difficulty-tid-1">
+                  <input type="checkbox" id="edit-field-difficulty-tid" value="1">
+                  <label class="option">{{ difficulty }}</label>
+                </div>
+              {% endfor %}
+            </div>
           </div>
-        {% endfor %}
-      </form>
-    </div>
-    <div class="filter-section">
-      <div>Rating</div>
-      <!-- Needs on / off options-->
-      <div class="star-icon"></div>
-      <div class="star-icon"></div>
-      <div class="star-icon"></div>
-      <div class="star-icon"></div>
-      <div class="star-icon"></div>
-    </div>
-    <div class="filter-section">
-      <div>Amenities</div>
-      <!-- -->
-    </div>
-    <div class="filter-section">
-      <div>Distance (miles)</div>
-      <input type="text" id="edit-field-distance-miles-value" name="field_distance_miles_value" value="" size="30" maxlength="128" class="form-text">
-    </div>
+          <div class="views-exposed-widget">
+            <div>Rating</div>
+            <!-- Needs on / off options-->
+            <div class="star-icon"></div>
+            <div class="star-icon"></div>
+            <div class="star-icon"></div>
+            <div class="star-icon"></div>
+            <div class="star-icon"></div>
+          </div>
+          <div class="views-exposed-widget">
+            <div>Amenities</div>
+            <!-- -->
+          </div>
+          <div class="views-exposed-widget">
+            <div>Distance (miles)</div>
+            <input type="text" id="edit-field-distance-miles-value" name="field_distance_miles_value" value="" size="30" maxlength="128" class="form-text">
+          </div>
+        </div>
+      </div>
+    </form>
   </div>
 
   <div class="view-content">
   {% for item in site.trails limit:5 %}
     <div itemscope class="views-row node-trails node-teaser">
       <div class="section-one">
-        <h2 class="trail-name"><a href="{{ item.permalink }}">{{ item.title }}</a></h2>
+        <h3 class="trail-name"><a href="{{ item.permalink }}">{{ item.title }}</a></h3>
         <div class="field field-name-field-region field-type-taxonomy-term-reference field-label-above">
           <div class="field-label">Region:</div>
           <div class="field-items">{{ item.location }}</div>
@@ -84,7 +90,7 @@ permalink: /trails/
         </div>
       </div>
       <div class="section-two">
-        <div class="description">{{ item.content | truncate: 200 }}</div>
+        <div class="description">{{ item.content | truncate: 250 }}</div>
       </div>
     </div>
   {% endfor %}

@@ -1,23 +1,17 @@
 header.site-header {
   @include clearfix;
-
 }
 .logo {
   @include breakpoint($tablet, $no-query: '.no-mq') {
     @include grid-span(4, 1);
   }
 }
-
 .main-nav {
   @include breakpoint($tablet, $no-query: '.no-mq') {
     @include grid-span(4, 9);
   }
 }
-
-.page-trails, .node-type-trails, .page-gallery, .node-type-gallery, .node-type-page {
-  header.site-header {
-    background: url('../images/header-subpages.jpg');
-    height: 415px;
-  }
-
+header.site-header.no-preface {
+  background: url('../images/header-subpages.jpg');
+  height: 415px;
 }
