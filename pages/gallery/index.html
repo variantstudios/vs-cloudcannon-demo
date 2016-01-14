@@ -4,15 +4,15 @@ permalink: /gallery/
 title: "Gallery"
 ---
 
-<section class="clearfix">
-  <ul class="grid">
-    {% for item in site.gallery %}
-		<a class="gallery-group" href="{{ item.permalink }}">
-			<li itemscope class="grid-item">
-				<h5 class="gallery-group-name">{{ item.title }}</h5>
+<div class="gallery">
+	<div class="view-content">
+	  {% for item in site.gallery %}
+	  	<div class="gallery-item views-row">
+			<a href="{{ item.permalink }}">
 				<img class="gallery-item lrg" src="{{ item.images.first.small_image_path }}" alt="{{ item.title }}" itemprop="image">
-			</li>
-		</a>
-    {% endfor %}
-  </ul>
-</section>
+				<div class="gallery-title">{{ item.title }}</div>
+			</a>
+	  	</div>
+	  {% endfor %}
+	</div>
+</div>

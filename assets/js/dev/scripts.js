@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
     $('.js nav.top-nav').prepend('<button class="menu-btn">Menu</button>');
     $('.js nav.top-nav ul').addClass('hide');
 
@@ -31,6 +30,10 @@ $(document).ready(function() {
             }
         });
     }
+
+    $('.flexslider').flexslider({
+        animation: "slide"
+    });
 
     // Make sure photos aren't ever stretched
     $('a.gallery').colorbox({

@@ -5,24 +5,24 @@ tags:
   - title: Rawah
   - title: Backpacking
 location: Twin Lakes, CO
-permalink: /gallery/twin-lakes/
+permalink: /gallery/twin-crater/
 images:
   - title:
-    small_image_path: /assets/images/gallery/twin-lakes/img_2391.jpg
-    large_image_path: /assets/images/gallery/twin-lakes/img_2391.jpg
+    small_image_path: /assets/images/gallery/twin-crater/img_2391.jpg
+    large_image_path: /assets/images/gallery/twin-crater/img_2391.jpg
   - title:
-    small_image_path: /assets/images/gallery/twin-lakes/img_2393.jpg
-    large_image_path: /assets/images/gallery/twin-lakes/img_2393.jpg
+    small_image_path: /assets/images/gallery/twin-crater/img_2393.jpg
+    large_image_path: /assets/images/gallery/twin-crater/img_2393.jpg
   - title:
-    small_image_path: /assets/images/gallery/twin-lakes/img_2399.jpg
-    large_image_path: /assets/images/gallery/twin-lakes/img_2399.jpg
+    small_image_path: /assets/images/gallery/twin-crater/img_2399.jpg
+    large_image_path: /assets/images/gallery/twin-crater/img_2399.jpg
   - title:
-    small_image_path: /assets/images/gallery/twin-lakes/img_2408.jpg
-    large_image_path: /assets/images/gallery/twin-lakes/img_2408.jpg
+    small_image_path: /assets/images/gallery/twin-crater/img_2408.jpg
+    large_image_path: /assets/images/gallery/twin-crater/img_2408.jpg
   - title:
-    small_image_path: /assets/images/gallery/twin-lakes/img_2414.jpg
-    large_image_path: /assets/images/gallery/twin-lakes/img_2414.jpg
+    small_image_path: /assets/images/gallery/twin-crater/img_2414.jpg
+    large_image_path: /assets/images/gallery/twin-crater/img_2414.jpg
   - title:
-    small_image_path: /assets/images/gallery/twin-lakes/img_2417.jpg
-    large_image_path: /assets/images/gallery/twin-lakes/img_2417.jpg
+    small_image_path: /assets/images/gallery/twin-crater/img_2417.jpg
+    large_image_path: /assets/images/gallery/twin-crater/img_2417.jpg
 ---
