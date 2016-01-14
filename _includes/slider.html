@@ -1,0 +1,12 @@
+<div class="front-block flexslider">
+  <ul class="slides">
+    {% for trail in site.trails limit:5 %}
+      <li>
+        <img class="trail-image" src="{{ trail.images.first.image_path }}" alt="{{ trail.title }}" />
+        <div class="trail-location">{{ trail.location }}</div>
+        <h4 class="trail-name"><a href="{{ trail.permalink }}">{{ trail.title }}</a></h4>
+        <div><a href="{{ trail.permalink }}">View Trail</a></div>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
