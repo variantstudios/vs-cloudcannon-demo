@@ -92,7 +92,12 @@
       background: url('../images/icons/star-small.svg') no-repeat;
       margin-right: 5px;
       .on { background: url('../images/icons/star-small.svg') no-repeat; }
-      .off { background: url('../images/icons/star-small-off.svg') no-repeat; }
+      .off { 
+        background: url('../images/icons/star-small-off.svg') no-repeat; 
+        position: absolute;
+        width: 20px;
+        height: 20px;
+      }
     }
   }
 }

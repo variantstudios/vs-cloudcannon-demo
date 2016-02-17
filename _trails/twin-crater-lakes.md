@@ -24,6 +24,7 @@ images:
     image_path: /assets/images/trails/bluelake.jpg
   - title: Test Photo
     image_path: /assets/images/trails/craterlakes2.jpg
+description: "This trail is best accomplished as an overnight trip. Hike up the West Branch Trail, passing the junction with the Camp Lake Trail after about 2.7 miles. After another 0.9 mile you will come to a junction with the southern end of the Rawah Trail."
 ---
 
 This trail is best accomplished as an overnight trip. Hike up the West Branch Trail, passing the junction with the Camp Lake Trail after about 2.7 miles. After another 0.9 mile you will come to a junction with the southern end of the Rawah Trail. Proceed up the Rawah Trail and through a series of steep switchbacks about 0.6 mile to the Twin Crater Lakes trailhead. While in this area, you can make a steep side trip to Bench Lake.

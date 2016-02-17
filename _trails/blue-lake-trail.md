@@ -6,9 +6,10 @@ location: Lower Poudre Canyon
 latitude: 40.415984
 longitude: -105.218758
 rating: 3
+difficulty: Easy
 distance: 3.1 miles
 starting_elevation: 9,482 ft.
-elevation_gain: 9,482 ft.
+elevation_gain: 182 ft.
 featured: false
 amenities:
   - title: Dog Friendly
@@ -22,6 +23,7 @@ amenities:
 images:
   - title: Test Photo
     image_path: /assets/images/trails/img_5144.jpg
+description: "This is the most heavily used trail in the Rawah Wilderness, because of its proximity to a paved road and the short distance required to reach a subalpine lake. Because of this heavy use and extensive resource damage around Blue and Hang lakes, special regulations have been implemented. The 1/4-mile Blue Lake Closure Area surrounds Blue Lake and merges with a similar Closure Area around Hang Lake."
 ---
 
 This is the most heavily used trail in the Rawah Wilderness, because of its proximity to a paved road and the short distance required to reach a subalpine lake. Because of this heavy use and extensive resource damage around Blue and Hang lakes, special regulations have been implemented. The 1/4-mile Blue Lake Closure Area surrounds Blue Lake and merges with a similar Closure Area around Hang Lake. Camping is prohibited within these closure areas and fires must be self-contained chemical stoves; building, maintaining, attending, or using any type of wood fire is prohibited. Saddle, pack, or draft animals of any type are prohibited on the entire trail from May 15 to September 15. They are allowed on the trail from September 16 to May 14, but they may never be corralled, tethered, hobbled, or picketed overnight within the Blue Lake or Hang Lake Closure areas.

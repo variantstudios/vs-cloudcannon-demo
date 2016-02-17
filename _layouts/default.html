@@ -7,7 +7,13 @@
 
   {% include header.html %}
 
+  {% if page.url == "/trails/" %}
   <main id="content" class="no-preface">
+  {% else if page.url == "/trails/*" %}
+  <main id="content" class="node-trails view-mode-full no-preface">
+  {% else %}
+  <main id="content" class="">
+  {% endif %}
     <div class="wrap">
       {{ content }}
     </div>

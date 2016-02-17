@@ -11,11 +11,24 @@
 }
 
 .view-our-team {
+  @include clearfix;
+  margin-top: 2em;
   .views-row {
+    padding-bottom: 4em;
     @include breakpoint($tablet, $no-query: '.no-mq') {
-      @include float-span(4);
+      @include float-span(5.8);
+      &:nth-child(odd) {
+        clear: both;
+      }
+    }
+    @include breakpoint($desktop, $no-query: '.no-mq') {
+      @include float-span(3.9);
+      &:nth-child(odd) {
+        clear: none;
+      }
     }
     img {
+      @include box-shadow(0,2px,4px,rgba(0,0,0,0.5));
       width: 100%;
     }
   }

@@ -2,10 +2,12 @@
 <!--[if lte IE 8]><html class="no-js lte-ie8" lang="en"><![endif]-->
 <!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
   {% include head.html %}
-  <body>
+  <body class="front">
   {% include browserupgrade.html %}
   {% include header.html %}
-  {% include slider.html %}
+  <div class="preface">
+    {% include slider.html %}
+  </div>
   <main id="content">
     <div class="wrap">
       {{ content }}

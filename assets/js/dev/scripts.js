@@ -32,7 +32,8 @@ $(document).ready(function() {
     }
 
     $('.flexslider').flexslider({
-        animation: "slide"
+        animation: "slide",
+        height: "auto",
     });
 
     // Make sure photos aren't ever stretched

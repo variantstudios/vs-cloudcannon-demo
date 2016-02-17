@@ -1,0 +1,12 @@
+- name: John Smith
+  headshot_path: /assets/images/staff/john.jpg
+  bio: 'In dui magna, posuere eget, vestibulum et, tempor auctor, justo. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis. Proin magna. Vivamus consectetuer hendrerit lacus. Curabitur suscipit suscipit tellus. Vestibulum dapibus nunc ac augue. Ut tincidunt tincidunt erat. Aenean imperdiet.'
+- name: Jane Snow
+  headshot_path: /assets/images/staff/jane.jpeg
+  bio: 'Aenean imperdiet. Etiam imperdiet imperdiet orci. Donec sodales sagittis magna. In ut quam vitae odio lacinia tincidunt Aenean imperdiet. Etiam imperdiet imperdiet orci. Donec imperdiet sagittis orci lacinia tincidunt sodales sagittis magna. In ut quam vitae odio lacinia tincidunt.'
+- name: Frank James
+  headshot_path: /assets/images/staff/frank.jpg
+  bio: 'Aenean imperdiet, vestibulum et, tempor auctor, justo. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis. Proin magna. Vivamus consectetuer hendrerit lacus. Curabitur suscipit suscipit tellus. Vestibulum dapibus nunc ac augue. Ut tincidunt tincidunt erat. Curabitur vestibulum aliquam leo. '
+- name: Sarah Scott
+  headshot_path: /assets/images/staff/staff.jpg
+  bio: 'Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Vestibulum suscipit nulla quis orci. Suspendisse eu ligula. Praesent venenatis metus at tortor pulvinar varius. Phasellus volutpat, metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Vivamus euismod mauris. Curabitur vestibulum aliquam leo.'

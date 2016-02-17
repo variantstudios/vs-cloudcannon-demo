@@ -1,8 +1,9 @@
 .preface {
-    position: relative;
-    top: 0;
-    height: 450px;
-    margin-top: -100px;
-    z-index: -1;
-    @include breakpoint($tablet, $no-query: '.no-mq') { height: 750px; }
+  position: relative;
+  top: -100px;
+  //height: 450px;
+  z-index: 0;
+  @include breakpoint($tablet, $no-query: '.no-mq') {
+    //height: 750px;
+  }
 }

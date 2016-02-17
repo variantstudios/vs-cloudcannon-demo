@@ -1,16 +1,16 @@
 .gallery {
   @include clearfix;
-  .gallery-item {
+  .views-row {
     position: relative;
     margin-bottom: 1.5em;
     @include box-shadow(0,2px,4px,rgba(0,0,0,0.5));
-    &.views-row-odd {
+    &:nth-child(odd) {
       @include breakpoint($tablet, $no-query: '.no-mq') {
         @include grid-span(6,1);
         clear: both;
       }
     }
-    &.views-row-even {
+    &:nth-child(even) {
       @include breakpoint($tablet, $no-query: '.no-mq') {
         @include grid-span(6,7);
       }

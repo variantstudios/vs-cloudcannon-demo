@@ -22,6 +22,7 @@ amenities:
 images:
   - title: Test Photo
     image_path: /assets/images/trails/craterlakes2.jpg
+description: "The City of Fort Collins acquired the right from the Forest Service to develop a property known as Young’s Gulch (now called Young Gulch) in 1918. The City spent $300 in the spring of 1919 to build a road up the gulch, and was assisted by the Forest Service in planting trees in the area."
 ---
 
 The City of Fort Collins acquired the right from the Forest Service to develop a property known as Young’s Gulch (now called Young Gulch) in 1918. The City spent $300 in the spring of 1919 to build a road up the gulch, and was assisted by the Forest Service in planting trees in the area. The trail meanders up Young Gulch and then Prairie Gulch, crossing the stream a total of 44 times (21 times below the small stream coming out of upper Young Gulch, the crossing of that stream, and 22 crossings of the stream coming down Prairie Gulch. Only two of the crossings are facilitated by bridges so travel in early spring can be challenging (and wet!).

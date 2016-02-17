@@ -17,8 +17,9 @@ permalink: /trails/
       marker.bindPopup("<a href='{{ item.permalink }}'><strong>{{ item.title }}</strong></a>");
   {% endfor %}
 </script>
+
 <div class="view-trails view-display-id-page">
-  <div class="view-filters">
+<!--   <div class="view-filters">
     <h5 class="block-title">Filter Trails</h5>
     <form action="/trails">
       <div class="filter-section" class="ctools-auto-submit-full-form ctools-auto-submit-processed jquery-once-2-processed" id="views-exposed-form-trails-page">
@@ -62,7 +63,6 @@ permalink: /trails/
           </div>
           <div class="views-exposed-widget">
             <div>Amenities</div>
-            <!-- -->
           </div>
           <div class="views-exposed-widget">
             <div>Distance (miles)</div>
@@ -71,42 +71,62 @@ permalink: /trails/
         </div>
       </div>
     </form>
-  </div>
+  </div> -->
+
   <div class="view-content">
-  {% for item in site.trails limit:5 %}
-    <div itemscope class="views-row node-trails node-teaser">
+  {% for items in site.trails %}
+    <div class="views-row node-trails node-teaser">
+
       <div class="section-one">
-        <h3 class="trail-name"><a href="{{ item.permalink }}">{{ item.title }}</a></h3>
-        <div class="field field-name-field-region field-type-taxonomy-term-reference field-label-above">
+        <h3 class="trail-name"><a href="{{ items.permalink }}">{{ items.title }}</a></h3>
+        <div class="field field-name-field-region field-label-above">
           <div class="field-label">Region:</div>
-          <div class="field-items">{{ item.location }}</div>
+          <div class="field-items">{{ items.location }}</div>
         </div>
+      
         <div class="field field-name-field-star-rating field-type-fivestar field-label-hidden">
           <div class="field-items fivestar-default">
-            <div class="form-item form-type-item">
-              <div class="fivestar-widget-static fivestar-widget-static-vote fivestar-widget-static-5 clearfix">
-                <div class="star star-1 star-odd star-first">
-                  <span class="on"></span>
-                </div>
-                <div class="star star-2 star-even">
-                  <span class="on"></span>
-                </div>
-                <div class="star star-3 star-odd">
-                  <span class="on"></span>
-                </div>
-                <div class="star star-4 star-even">
-                  <span class="on"></span>
-                </div>
-                <div class="star star-5 star-odd star-last">
-                  <span class="off"></span>
-                </div>
-              </div>
-            </div>
+            {% if items.rating == 1 %}
+              <div class="star star-1 star-first"><span class="on"></span></div>
+              <div class="star"> <span class="off"></span></div>
+              <div class="star"> <span class="off"></span></div>
+              <div class="star"> <span class="off"></span></div>
+              <div class="star"> <span class="off"></span></div>
+            {% endif %}
+            {% if items.rating == 2 %}
+              <div class="star star-2"><span class="on"></span></div>
+              <div class="star star-2"><span class="on"></span></div>
+              <div class="star"> <span class="off"></span></div>
+              <div class="star"> <span class="off"></span></div>
+              <div class="star"> <span class="off"></span></div>
+            {% endif %}
+            {% if items.rating == 3 %}
+              <div class="star star-3"><span class="on"></span></div>
+              <div class="star star-3"><span class="on"></span></div>
+              <div class="star star-3"><span class="on"></span></div>
+              <div class="star"> <span class="off"></span></div>
+              <div class="star"> <span class="off"></span></div>
+            {% endif %}
+             {% if items.rating == 4 %}
+              <div class="star star-4"><span class="on"></span></div>
+              <div class="star star-4"><span class="on"></span></div>
+              <div class="star star-4"><span class="on"></span></div>
+              <div class="star star-4"><span class="on"></span></div>
+              <div class="star"><span class="off"></span></div>
+            {% endif %}
+            {% if items.rating == 5 %}
+              <div class="star star-5 star-last"><span class="on"></span></div>
+              <div class="star star-5 star-last"><span class="on"></span></div>
+              <div class="star star-5 star-last"><span class="on"></span></div>
+              <div class="star star-5 star-last"><span class="on"></span></div>
+              <div class="star star-5 star-last"><span class="on"></span></div>
+            {% endif %}
           </div>
         </div>
+
       </div>
       <div class="section-two">
-        <div class="description">{{ item.content | truncate: 250 }}</div>
+        {{ items.description }}
       </div>
     </div>
   {% endfor %}

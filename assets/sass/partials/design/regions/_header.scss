@@ -1,16 +1,20 @@
 header.site-header {
   @include clearfix;
+    position: relative;
+    z-index: 2;
 }
 .logo {
   @include breakpoint($tablet, $no-query: '.no-mq') {
     @include grid-span(4, 1);
   }
 }
+
 .main-nav {
   @include breakpoint($tablet, $no-query: '.no-mq') {
-    @include grid-span(4, 9);
+    @include grid-span(6, 7);
   }
 }
+
 header.site-header.no-preface {
   background: url('../images/header-subpages.jpg');
   height: 415px;

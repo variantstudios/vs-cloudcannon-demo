@@ -52,6 +52,12 @@ defaults:
     values:
       layout: "post"
 
+
+#selects
+difficulty:
+  - Easy
+  - Medium
+  - Difficult
 # Reading Time Feature
 reading_time:     true
 words_per_minute: 200

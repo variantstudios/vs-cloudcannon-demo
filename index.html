@@ -2,61 +2,82 @@
 layout: front
 title: "Front Range TRAILS"
 ---
-<div class="content-wrapper front">
-  <main role="main">
+
     <div class="clearfix front-block" id="block-views-trails-block-2">
-      <div class="featured-trail-left">
-        <h2>Featured Trail</h2>
-        <div class="view-display-id-block_2 jquery-once-1-processed">
-          {% for trail in site.trails %}
-            {% if trail.featured %}
-              <div class="view-trails">
-                <div class="trail-left">
-                  <h4 class="trail-name"><a href="{{ trail.permalink }}">{{ trail.title }}</a></h4>
-                  <a href="{{ trail.permalink }}"><img class="trail-image" src="{{ trail.images.first.image_path }}" alt="{{ item.title }}" /></a>
-                </div>
-                <div class="trail-right">
-                  <div class="trail-location">
-                    <span class="location-icon"></span>
-                    <span class="location">{{ trail.location }}</span>
-                    <div class="field field-name-field-star-rating field-type-fivestar field-label-hidden">
-                      <div class="field-items fivestar-default">
-                        <div class="form-item form-type-item">
-                          <div class="fivestar-widget-static fivestar-widget-static-vote fivestar-widget-static-5 clearfix">
-                            <div class="star star-1 star-odd star-first">
-                              <span class="on"></span>
-                            </div>
-                            <div class="star star-2 star-even">
-                              <span class="on"></span>
-                            </div>
-                            <div class="star star-3 star-odd">
-                              <span class="on"></span>
-                            </div>
-                            <div class="star star-4 star-even">
-                              <span class="on"></span>
-                            </div>
-                            <div class="star star-5 star-odd star-last">
-                              <span class="off"></span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+      <h2>Featured Trail</h2>
+      <div class="view-display-id-block_2 jquery-once-1-processed node-trails node-teaser view-mode-teaser">
+        {% for trail in site.trails %}
+          {% if trail.featured %}
+            <div class="section-one">
+              <h3 class="trail-name"><a href="{{ trail.permalink }}">{{ trail.title }}</a></h3>
+              <div class="field field-name-field-region ">
+                <div class="field-label">Region:&nbsp;</div>
+                <div class="field-items">
+                  <div class="field-item even">
+                  <a href="{{ trail.url }}">{{ trail.location }}</a>
                   </div>
-                  <div class="trail-desc">{{ trail.content | truncate: 200 }}</div>
                 </div>
               </div>
-            {% endif %}
-          {% endfor %}
-        </div>
+
+            <div class="field field-name-field-star-rating field-type-fivestar field-label-hidden">
+              <div class="field-items fivestar-default">
+                {% if trail.rating == 1 %}
+                  <div class="star star-1 star-first"><span class="on"></span></div>
+                  <div class="star"> <span class="off"></span></div>
+                  <div class="star"> <span class="off"></span></div>
+                  <div class="star"> <span class="off"></span></div>
+                  <div class="star"> <span class="off"></span></div>
+                {% endif %}
+                {% if trail.rating == 2 %}
+                  <div class="star star-2"><span class="on"></span></div>
+                  <div class="star star-2"><span class="on"></span></div>
+                  <div class="star"> <span class="off"></span></div>
+                  <div class="star"> <span class="off"></span></div>
+                  <div class="star"> <span class="off"></span></div>
+                {% endif %}
+                {% if trail.rating == 3 %}
+                  <div class="star star-3"><span class="on"></span></div>
+                  <div class="star star-3"><span class="on"></span></div>
+                  <div class="star star-3"><span class="on"></span></div>
+                  <div class="star"> <span class="off"></span></div>
+                  <div class="star"> <span class="off"></span></div>
+                {% endif %}
+                 {% if trail.rating == 4 %}
+                  <div class="star star-4"><span class="on"></span></div>
+                  <div class="star star-4"><span class="on"></span></div>
+                  <div class="star star-4"><span class="on"></span></div>
+                  <div class="star star-4"><span class="on"></span></div>
+                  <div class="star"><span class="off"></span></div>
+                {% endif %}
+                {% if trail.rating == 5 %}
+                  <div class="star star-5 star-last"><span class="on"></span></div>
+                  <div class="star star-5 star-last"><span class="on"></span></div>
+                  <div class="star star-5 star-last"><span class="on"></span></div>
+                  <div class="star star-5 star-last"><span class="on"></span></div>
+                  <div class="star star-5 star-last"><span class="on"></span></div>
+                {% endif %}
+              </div>
+            </div>
+
+            </div>
+              <div class="section-two">
+                <div class="trail-desc">{{ trail.content | truncate: 300 }}</div>
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+    </div>
+
+    <div class="recent-trail-right" id="block-views-trails-block-3">
+      <h2>Recently Added Trails</h2>
+      <ul>
+        {% for trail in site.trails limit:4 %}
+          <li class="trail-name">
+            <a href="{{ trail.permalink }}">{{ trail.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+      <div class="view-footer view-more-link">
+        <a class="view-more" href="/trails/">View All Trails ></a>
       </div>
     </div>
-    <div class="recent-trail-right" id="block-views-trails-block-3">
-      <h5>Recently Added Trails</h5>
-      {% for trail in site.trails limit:4 %}
-          <h4 class="trail-name"><a href="{{ trail.permalink }}">{{ trail.title }}</a></h4>
-      {% endfor %}
-      <div><a class="view-more" href="/trails/">View All Trails ></a></div>
-    </div>
-  </main>
-</div>

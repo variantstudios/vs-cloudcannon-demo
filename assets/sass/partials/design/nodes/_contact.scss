@@ -1,0 +1,64 @@
+.webform-component {
+  padding: 1em 0;
+  input, textarea {
+    width: 100%;
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+      width: 64%;
+      display: inline-block;
+    }
+  }
+  label {
+    color: #8E8E8E;
+    font-size: 95%;
+    padding-bottom: .5em;
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 1em;
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+     width: 35%;
+     text-align: right;
+    }
+  }
+  .desc {
+    display: inline-block;
+    font-size: 80%;
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+     padding-left: 36%;
+    }
+  }
+  .checkbox-label {
+    display: inline-block;
+    padding-left: .5em;
+  }
+  &.checkbox {
+    input {
+      width: auto;
+    }
+  }
+  &.checkboxes {
+    .checkbox-list-wrap {
+      @include breakpoint($tablet, $no-query: '.no-mq') {
+        width: 64%;
+        display: inline-block;
+      }
+    }
+    .checkbox-list {
+      input {
+        width: auto;
+        margin-right: 10px;
+      }
+      label {
+        text-align: left;
+        width: auto;
+        color: inherit;
+      }
+    }
+  }
+}
+
+input[type=submit].sendButton {
+    margin: 2em auto;
+    text-align: center;
+    display: block;
+    font-size: 140%;
+}

@@ -1,9 +1,7 @@
-{% if page.url == "/blog/" %}
-<header class="site-header preface" role="banner">
-{% elsif page.url == site.baseurl %}
+{% if page.url == "/index.html" %}
 <header class="site-header" role="banner">
-{% elsif page.url == "localhost:3000" %}
-<header class="site-header" role="banner">
+{% elsif page.url == "about"  %}
+<header class="site-header no-preface" role="banner">
 {% else %}
 <header class="site-header no-preface" role="banner">
 {% endif %}

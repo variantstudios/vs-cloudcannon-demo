@@ -22,6 +22,7 @@ amenities:
 images:
   - title: Test Photo
     image_path: /assets/images/trails/bluelake.jpg
+description: "The trail heads north on an old roadbed heading up Gordon Creek. Note that there is considerable poison ivy along the lower trail and in the streambed. After hiking about 0.5 mile you will notice old building foundations scattered along the gulch. These are the remains of old Poudre Park. Most of these homesteads were erected between 1911 and 1925."
 ---
 
 The trail heads north on an old roadbed heading up Gordon Creek. Note that there is considerable poison ivy along the lower trail and in the streambed. After hiking about 0.5 mile you will notice old building foundations scattered along the gulch. These are the remains of old Poudre Park. Most of these homesteads were erected between 1911 and 1925. Hewlett Gulch is named for one of the first settlers along the Poudre, Horace Huleatt. Horace made his home in a valley to the north of this area in the late 1870s. There are also mine tailings and some closed mine shafts in the gulch. As you hike on up, the trail cuts through a narrow canyon crossing the stream several times. You will come to a spot where the trail branches. The trail to the left is the returning end of the informal "loop trail" used by mountain bikers. Stay to the right. From here the trail will wind through a canyon, crossing the stream several more times. Eventually the trail will leave the stream and head uphill to your left (west). 

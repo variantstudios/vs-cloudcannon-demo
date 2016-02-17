@@ -6,7 +6,12 @@
 	        <img class="gallery-item" src="{{ item.images.first.small_image_path }}" alt="{{ item.title }}">
 	      </div>
 	    {% endfor %}
-	    <div><a class="view-more" href="/gallery/">View gallery</a></div>
+	    <div class="view-footer">
+        <a href="/gallery" title="Gallery">
+          <img src="/assets/images/icons/camera.svg">
+          <h6>View Gallery</h6>
+        </a>    
+      </div>
 	  </div>
 	  <div class="blog-square">
 	    {% for item in site.blog limit:1 %}

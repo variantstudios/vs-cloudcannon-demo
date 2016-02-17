@@ -1,22 +1,13 @@
 ---
 layout: default
 ---
-
-<div class="content-wrapper full-width">
-  <main class="wrap">
-      <header>
-        <h1>{{ page.title }}</h1>
-        <h3 class="subtitle">{{ page.subtitle }}</h3>
-      </header>
-      <section class="clearfix">
-      	{{ content }}
-        <ul class="grid">
-          {% for item in page.images %}
-            <li itemscope class="grid-item">
-              <a class="gallery" href="{{ item.large_image_path }}"><img class="gallery-item lrg" src="{{ item.small_image_path }}" alt="{{ item.title }}" itemprop="image"></a>
-            </li>
-          {% endfor %}
-        </ul>
-	  </section>
-  </main>
-</div>
+<section class="clearfix">
+  	{{ content }}
+    <div class="field-name-field-gallery-images">
+      {% for item in page.images %}
+        <div itemscope class="field-item">
+          <a class="gallery" href="{{ item.large_image_path }}"><img class="gallery-item lrg" src="{{ item.small_image_path }}" alt="{{ item.title }}" itemprop="image"></a>
+        </div>
+      {% endfor %}
+    </div>
+</section>
