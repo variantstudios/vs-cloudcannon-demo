@@ -6,9 +6,10 @@ location: Rawah Wilderness
 latitude: 40.375762
 longitude: -105.472149
 rating: 5
+difficulty: Difficult
 distance: 3.1 miles
 starting_elevation: 9,482 ft.
-elevation_gain: 9,482 ft.
+elevation_gain: 1084 ft.
 featured: true
 amenities:
   - title: Dog Friendly
@@ -21,7 +22,7 @@ amenities:
     option: true
 images:
   - title: Test Photo
-    image_path: /assets/images/trails/bluelake.jpg
+    image_path: /assets/images/trails/craterlakes.jpg
   - title: Test Photo
     image_path: /assets/images/trails/craterlakes2.jpg
 description: "This trail is best accomplished as an overnight trip. Hike up the West Branch Trail, passing the junction with the Camp Lake Trail after about 2.7 miles. After another 0.9 mile you will come to a junction with the southern end of the Rawah Trail."

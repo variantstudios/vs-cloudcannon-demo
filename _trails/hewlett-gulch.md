@@ -5,10 +5,11 @@ permalink: /trails/hewlett-gulch/
 location: Lower Poudre Canyon
 latitude: 40.451948
 longitude: -105.657614
-rating: 1
+rating: 3
+difficulty: Medium
 distance: 3.1 miles
-starting_elevation: 9,482 ft.
-elevation_gain: 9,482 ft.
+starting_elevation: 6,482 ft.
+elevation_gain: 751 ft.
 featured: false
 amenities:
   - title: Dog Friendly
@@ -21,7 +22,7 @@ amenities:
     option: true
 images:
   - title: Test Photo
-    image_path: /assets/images/trails/bluelake.jpg
+    image_path: /assets/images/trails/hewlett.jpg
 description: "The trail heads north on an old roadbed heading up Gordon Creek. Note that there is considerable poison ivy along the lower trail and in the streambed. After hiking about 0.5 mile you will notice old building foundations scattered along the gulch. These are the remains of old Poudre Park. Most of these homesteads were erected between 1911 and 1925."
 ---
 

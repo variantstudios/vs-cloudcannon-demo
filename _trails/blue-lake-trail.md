@@ -22,7 +22,7 @@ amenities:
     option: false
 images:
   - title: Test Photo
-    image_path: /assets/images/trails/img_5144.jpg
+    image_path: /assets/images/trails/bluelake1.jpg
 description: "This is the most heavily used trail in the Rawah Wilderness, because of its proximity to a paved road and the short distance required to reach a subalpine lake. Because of this heavy use and extensive resource damage around Blue and Hang lakes, special regulations have been implemented. The 1/4-mile Blue Lake Closure Area surrounds Blue Lake and merges with a similar Closure Area around Hang Lake."
 ---
 

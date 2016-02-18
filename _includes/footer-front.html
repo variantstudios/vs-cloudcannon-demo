@@ -13,23 +13,13 @@
         </a>    
       </div>
 	  </div>
-	  <div class="blog-square">
-	    {% for item in site.blog limit:1 %}
-	      <a href="{{ item.permalink }}">
-	        <div class="blog-teaser">
-	          <img class="blog-image" src="{{ item.image_path }}" alt="{{ item.title }}">
-	          <div class="blog-date">{{ item.date }}</div>
-	          <h4 class="blog-name">{{ item.title }}</h4>
-	          <div class="blog-content">{{ item.description }}</div>
-	        </div>
-	      </a>
-	    {% endfor %}
-	  </div>
-  	<div>Follow Us</div>
-  	<div>
-  		<img src="" alt="Facebook">
-  		<img src="" alt="Twitter">
-  		<img src="" alt="Google Plus">
-  	</div>
+
+  	<div class="social-footer">
+      <h3>Follow Us</h3>
+    		<a href="facebook.com"><img src="/assets/images/icons/facebook.svg" alt="Facebook"></a>
+    		<a href="twitter.com"><img src="/assets/images/icons/twitter.svg" alt="Twitter"></a>
+    		<a href="google.com"><img src="/assets/images/icons/google.svg" alt="Google Plus"></a>
+    </div>
+
   </div>
 </footer>
