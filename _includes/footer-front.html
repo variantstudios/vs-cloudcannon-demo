@@ -1,7 +1,7 @@
 <footer>
   <div class="wrap">
 	  <div class="gallery-square" id="block-views-gallery-block-1">
-	    {% for item in site.gallery limit:4 %}
+	    {% for item in site.gallery limit:3 %}
 	      <div class="grid-item">
 	        <img class="gallery-item" src="{{ item.images.first.small_image_path }}" alt="{{ item.title }}">
 	      </div>

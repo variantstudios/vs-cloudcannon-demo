@@ -3,19 +3,18 @@
   input, textarea {
     width: 100%;
     @include breakpoint($tablet, $no-query: '.no-mq') {
-      width: 64%;
+      width: 84%;
       display: inline-block;
     }
   }
   label {
-    color: #8E8E8E;
     font-size: 95%;
     padding-bottom: .5em;
     display: inline-block;
     vertical-align: top;
     padding-right: 1em;
     @include breakpoint($tablet, $no-query: '.no-mq') {
-     width: 35%;
+     width: 107px;
      text-align: right;
     }
   }
@@ -57,8 +56,17 @@
 }
 
 input[type=submit].sendButton {
-    margin: 2em auto;
-    text-align: center;
-    display: block;
-    font-size: 140%;
+  margin: 1em 0 0 111px;
+  text-align: center;
+  display: block;
+  font-size: 120%;
+}
+
+form {
+  background: rgba(255, 255, 255, 0.58);
+  border-radius: 3px;
+  padding: 3em;
+  margin: 2em auto;
+  width: 80%;
+  box-shadow: 1px 1px 7px rgba(0,0,0,0.25);
 }
